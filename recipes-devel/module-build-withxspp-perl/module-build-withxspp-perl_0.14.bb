@@ -19,6 +19,8 @@ RDEPENDS_${PN} += "extutils-cppguess-perl"
 RDEPENDS_${PN} += "extutils-xspp-perl"
 RDEPENDS_${PN} += "module-build-perl"
 
+DEPENDS += "perl module-build-perl"
+
 S = "${WORKDIR}/Module-Build-WithXSpp-${PV}"
 
 inherit cpan_build
